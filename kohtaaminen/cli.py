@@ -10,7 +10,7 @@ import typer
 import kohtaaminen
 import kohtaaminen.kohtaaminen as ko
 
-APP_NAME = 'Meeting, rendezvous, confluence (Finnish kohtaaminen) mark up, down, and up again.'
+APP_NAME = 'Meeting, rendezvous, confluence (Finnish kohtaaminen) mark up, down, and up again'
 APP_ALIAS = 'kohtaaminen'
 app = typer.Typer(
     add_completion=False,
