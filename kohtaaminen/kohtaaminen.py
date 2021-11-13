@@ -81,7 +81,7 @@ def main(argv: Union[List[str], None] = None) -> int:
             out_root = MD_ROOT
             print(f'would translate html tree from ({inp if inp else STDIN}) into markdown tree below {out_root}')
 
-            print(f'tasks:')
+            print('tasks:')
             start = None
             for task in tasks:
                 if task.name == 'index.html':
