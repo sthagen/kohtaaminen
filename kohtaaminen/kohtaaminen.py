@@ -8,6 +8,9 @@ import tempfile
 import zipfile
 from typing import List, Optional, Tuple, Union
 
+import pypandoc
+
+
 DEBUG_VAR = 'KOHTAAMINEN_DEBUG'
 DEBUG = os.getenv(DEBUG_VAR)
 
@@ -96,8 +99,18 @@ def main(argv: Union[List[str], None] = None) -> int:
                 print('did not find start target')
                 return 1
 
-            with open(start, 'rt', encoding=ENCODING) as handle:
+            index_path = out_root / 'index.md'
+            index_path.parent.mkdir(parents=True, exist_ok=True)
+            output = pypandoc.convert_file(str(start), 'markdown_github', outputfile=str(index_path))
+            assert output == ""
+            with open(index_path, 'rt', encoding=ENCODING) as handle:
                 for line in handle.readlines():
                     print(line.rstrip())
+            for task in tasks:
+                if task == start:
+                    continue
+                task_path = out_root / task.name.replace('html', 'md')
+                output = pypandoc.convert_file(str(task), 'markdown_github', outputfile=str(task_path))
+                assert output == ""
 
     return 0
