@@ -33,3 +33,14 @@ def test_translate_non_zip(capsys):
         out, err = capsys.readouterr()
         assert 'wrong magic number in zipfile' in out.lower()
         assert not err
+
+
+def test_translate_non_existing_zip(capsys):
+    in_path = pathlib.Path('does', 'not', 'exist', 'hypothetical.zip')
+    with pytest.raises(SystemExit) as exec_info:
+        cli.translate(source=in_path, inp=in_path)
+        assert exec_info.value.code == 1
+        out, err = capsys.readouterr()
+        assert 'source' in out.lower()
+        assert 'is no file' in out.lower()
+        assert not err
