@@ -61,7 +61,7 @@ clean:
 	@rm -f .coverage.*
 	@rm -rf build
 	@rm -f *.log
-	@rm -fr kohtamaminen-md/
+	@rm -fr kohtaaminen-md/
 	python setup.py clean
 
 image:
