@@ -56,7 +56,7 @@ def translate(
     """
     command = 'translate'
     incoming = inp if inp else (source if source != ko.STDIN else '')
-    action = [command, incoming]
+    action = [command, str(incoming)]
     return sys.exit(ko.main(action))
 
 

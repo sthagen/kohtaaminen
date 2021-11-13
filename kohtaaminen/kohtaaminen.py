@@ -34,7 +34,7 @@ def verify_request(argv: Optional[List[str]]) -> Tuple[int, str, List[str]]:
     if inp:
         in_path = pathlib.Path(str(inp))
         if not in_path.is_file():
-            return 1, 'source is no file', ['']
+            return 1, f'source ({in_path}) is no file', ['']
         if not ''.join(in_path.suffixes).lower().endswith('.zip'):
             return 1, 'source has not .zip extension', ['']
 
@@ -50,5 +50,5 @@ def main(argv: Union[List[str], None] = None) -> int:
 
     command, inp = strings
     out_root = MD_ROOT
-    print(f'would translate html tree from {inp} into markdown tree below {out_root}')
+    print(f'would translate html tree from ({inp if inp else STDIN}) into markdown tree below {out_root}')
     return 0
