@@ -4,6 +4,7 @@
 import os
 import pathlib
 import sys
+import tempfile
 import zipfile
 from typing import List, Optional, Tuple, Union
 
@@ -54,8 +55,25 @@ def main(argv: Union[List[str], None] = None) -> int:
         print('wrong magic number in zipfile')
         return 1
     with zipfile.ZipFile(inp, 'r') as zipper:
+        alert = False
         for name in zipper.namelist():
+            if not name[0].isidentifier() or '..' in name:
+                alert = True
             print(f'- {name}')
+        if alert:
+            print('suspicious entries in zip file')
+            return 1
+
+        with tempfile.TemporaryDirectory() as unpack:
+            zipper.extractall(path=unpack)
+            print(f'traversing unpack ({unpack})')
+            for place in sorted(pathlib.Path(unpack).glob('**')):
+                print(f'* {place}')
+                for thing in sorted(place.iterdir()):
+                    if thing.is_dir():
+                        continue
+                    print(f'  - {thing}')
+
     out_root = MD_ROOT
     print(f'would translate html tree from ({inp if inp else STDIN}) into markdown tree below {out_root}')
 
