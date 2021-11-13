@@ -2,6 +2,6 @@
 
 Export zip file with conventions adhering html and media tree:
 ```
-$ kohtaaminen tests/fixtures/basic/export.zip
+$ kohtaaminen import tests/fixtures/basic/export.zip
 markdown media tree below kohtaaminen-md
 ```
