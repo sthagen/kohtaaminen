@@ -1,10 +1,13 @@
 # -*- coding: utf-8 -*-
 # pylint: disable=line-too-long,missing-docstring,reimported,unused-import,unused-variable
+import pathlib
+
 import kohtaaminen.cli as cli
 
 
 def test_main_ok_no_args(capsys):
-    assert cli.main([], debug=False) == 0
+    inp = str(pathlib.Path('tests', 'fixtures', 'basic', 'export.zip'))
+    assert cli.main(['translate', inp]) == 0
     out, err = capsys.readouterr()
-    assert 'ok' in out.lower()
+    assert 'would translate html tree' in out.lower()
     assert not err
