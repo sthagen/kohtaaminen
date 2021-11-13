@@ -8,8 +8,7 @@ import tempfile
 import zipfile
 from typing import List, Optional, Tuple, Union
 
-import pypandoc
-
+import pypandoc  # type: ignore
 
 DEBUG_VAR = 'KOHTAAMINEN_DEBUG'
 DEBUG = os.getenv(DEBUG_VAR)
@@ -102,7 +101,7 @@ def main(argv: Union[List[str], None] = None) -> int:
             index_path = out_root / 'index.md'
             index_path.parent.mkdir(parents=True, exist_ok=True)
             output = pypandoc.convert_file(str(start), 'markdown_github', outputfile=str(index_path))
-            assert output == ""
+            assert output == ''
             with open(index_path, 'rt', encoding=ENCODING) as handle:
                 for line in handle.readlines():
                     print(line.rstrip())
@@ -111,6 +110,6 @@ def main(argv: Union[List[str], None] = None) -> int:
                     continue
                 task_path = out_root / task.name.replace('html', 'md')
                 output = pypandoc.convert_file(str(task), 'markdown_github', outputfile=str(task_path))
-                assert output == ""
+                assert output == ''
 
     return 0
