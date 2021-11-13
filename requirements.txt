@@ -1,1 +1,2 @@
+pypandoc>=1.6.4
 typer>=0.4.0
