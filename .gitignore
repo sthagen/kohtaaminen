@@ -131,4 +131,5 @@ dmypy.json
 # Typical local development artifacts
 *~
 .idea
+kohtaaminen-md/
 local_publi.sh
