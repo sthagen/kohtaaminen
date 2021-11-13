@@ -23,3 +23,13 @@ def test_translate_ok(capsys):
         out, err = capsys.readouterr()
         assert 'would translate html tree' in out.lower()
         assert not err
+
+
+def test_translate_non_zip(capsys):
+    in_path = pathlib.Path('tests', 'fixtures', 'basic', 'no.zip')
+    with pytest.raises(SystemExit) as exec_info:
+        cli.translate(source=in_path, inp=in_path)
+        assert exec_info.value.code == 1
+        out, err = capsys.readouterr()
+        assert 'wrong magic number in zipfile' in out.lower()
+        assert not err
