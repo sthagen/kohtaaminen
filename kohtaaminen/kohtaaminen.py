@@ -4,6 +4,7 @@
 import os
 import pathlib
 import sys
+import zipfile
 from typing import List, Optional, Tuple, Union
 
 DEBUG_VAR = 'KOHTAAMINEN_DEBUG'
@@ -49,6 +50,13 @@ def main(argv: Union[List[str], None] = None) -> int:
         return error
 
     command, inp = strings
+    if not zipfile.is_zipfile(inp):
+        print('wrong magic number in zipfile')
+        return 1
+    with zipfile.ZipFile(inp, 'r') as zipper:
+        for name in zipper.namelist():
+            print(f'- {name}')
     out_root = MD_ROOT
     print(f'would translate html tree from ({inp if inp else STDIN}) into markdown tree below {out_root}')
+
     return 0
