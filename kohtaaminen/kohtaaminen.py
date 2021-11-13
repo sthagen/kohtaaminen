@@ -54,6 +54,8 @@ def main(argv: Union[List[str], None] = None) -> int:
     if not zipfile.is_zipfile(inp):
         print('wrong magic number in zipfile')
         return 1
+
+    tasks = []
     with zipfile.ZipFile(inp, 'r') as zipper:
         alert = False
         for name in zipper.namelist():
@@ -72,9 +74,30 @@ def main(argv: Union[List[str], None] = None) -> int:
                 for thing in sorted(place.iterdir()):
                     if thing.is_dir():
                         continue
+                    if thing.suffixes[-1] == '.html':
+                        tasks.append(thing)
                     print(f'  - {thing}')
 
-    out_root = MD_ROOT
-    print(f'would translate html tree from ({inp if inp else STDIN}) into markdown tree below {out_root}')
+            out_root = MD_ROOT
+            print(f'would translate html tree from ({inp if inp else STDIN}) into markdown tree below {out_root}')
+
+            print(f'tasks:')
+            start = None
+            for task in tasks:
+                if task.name == 'index.html':
+                    start = task
+                    break
+
+            for task in tasks:
+                marker = ' *' if task == start else ''
+                print(f'- {task}{marker}')
+
+            if not start:
+                print('did not find start target')
+                return 1
+
+            with open(start, 'rt', encoding=ENCODING) as handle:
+                for line in handle.readlines():
+                    print(line.rstrip())
 
     return 0
