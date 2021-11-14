@@ -29,7 +29,24 @@ translating html tree from (tests/fixtures/basic/export.zip) into markdown tree 
 - /var/folders/7n/j4v9j0797kn4qrv4hkqs5gkh0000gn/T/tmp_18l00ii/KOH/index.html *
 imported 1 distinct asset:
 - attachments/2656469010/2656469021.jpg
-markdown tree is below (kohtaaminen-md)```
+markdown tree is below (kohtaaminen-md)
+```
+
+Result folder looks like this:
+```console
+$ tree kohtaaminen-md
+kohtaaminen-md
+├── 1-Scope_2656469003.md
+├── 2-References_2656501774.md
+├── 3-All-Good-Things-Come-in-Threes_2656469010.md
+├── Start_2656468993.md
+├── attachments
+│   └── 2656469010
+│       └── 2656469021.jpg
+└── index.md
+
+2 directories, 6 files
+```
 
 Ask for version:
 ```console
