@@ -6,7 +6,6 @@
 * Simplified detected image element markdown representation
 * Added experimental filter capability to strip html noise 
 * Removed verbosity from prototyping phase
-* Bumped dependencies
 * Increased test coverage
 * Second release on PyPI
 
