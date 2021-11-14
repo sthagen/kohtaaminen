@@ -2,6 +2,7 @@
 # pylint: disable=line-too-long,missing-docstring,reimported,unused-import,unused-variable
 import pathlib
 
+import click
 import pytest
 
 import kohtaaminen.cli as cli
@@ -13,6 +14,15 @@ def test_main_legacy_ok(capsys):
     out, err = capsys.readouterr()
     assert 'would translate html tree' in out.lower()
     assert not err
+
+
+def test_version_ok(capsys):
+    with pytest.raises(click.exceptions.Exit) as exec_info:
+        cli.app_version() == 0
+        assert exec_info.value.code == 0
+        out, err = capsys.readouterr()
+        assert 'version' in out.lower()
+        assert not err
 
 
 def test_translate_ok(capsys):
