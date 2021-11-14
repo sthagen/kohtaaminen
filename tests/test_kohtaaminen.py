@@ -21,3 +21,8 @@ def test_ko_verify_request_unknown_command():
 def test_ko_verify_request_falsy_input():
     argv = ['translate', '']
     assert ko.verify_request(argv) == (0, '', argv)
+
+
+def test_ko_verify_request_input_has_wrong_extension():
+    inp = str(pathlib.Path('tests', 'fixtures', 'basic', 'wrong.extension'))
+    assert ko.verify_request(['translate', inp]) == (1, 'source has not .zip extension', [''])
