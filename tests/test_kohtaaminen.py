@@ -16,3 +16,8 @@ def test_ko_verify_request_too_few():
 
 def test_ko_verify_request_unknown_command():
     assert ko.verify_request(['unknown', 'does not matter']) == (2, 'received unknown command', [''])
+
+
+def test_ko_verify_request_falsy_input():
+    argv = ['translate', '']
+    assert ko.verify_request(argv) == (0, '', argv)
