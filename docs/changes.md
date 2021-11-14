@@ -2,6 +2,7 @@
 
 ## 2021.11.14
 
+* Added opinionated markdown format filter
 * Added media to markdown translation
 * Simplified detected image element markdown representation
 * Added experimental filter capability to strip html noise 
