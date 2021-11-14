@@ -1,2 +1,3 @@
+mdformat-gfm>=0.7.10
 pypandoc>=1.6.4
 typer>=0.4.0
