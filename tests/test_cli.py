@@ -12,7 +12,7 @@ def test_main_legacy_ok(capsys):
     inp = str(pathlib.Path('tests', 'fixtures', 'basic', 'export.zip'))
     assert cli.main(['translate', inp]) == 0
     out, err = capsys.readouterr()
-    assert 'would translate html tree' in out.lower()
+    assert 'translating html tree from' in out.lower()
     assert not err
 
 
