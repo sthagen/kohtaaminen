@@ -128,20 +128,23 @@ def main(argv: Union[List[str], None] = None) -> int:
 
     tasks = []
     with zipfile.ZipFile(inp, 'r') as zipper:
-        alert = False
+        alerts = []
+        print(f'analyzing zip file listing of ({inp})')
         for name in zipper.namelist():
             if not name[0].isidentifier() or '..' in name:
-                alert = True
-            print(f'- {name}')
-        if alert:
-            print('suspicious entries in zip file')
+                alerts.append(f'suspicious entry ({name}) will be skipped')
+        if alerts:
+            print(f'found {len(alerts)} suspicious entries in zip file ({inp}):')
+            for alert in alerts:
+                print(f'- {alert}')
             # return 1
 
         asset_source_root = ''
         assets: List[str] = []
         with tempfile.TemporaryDirectory() as unpack:
+            print(f'unpacking zip file below ({unpack})')
             zipper.extractall(path=unpack)
-            print(f'traversing unpack ({unpack})')
+            print(f'traversing folder ({unpack})')
             for place in sorted(pathlib.Path(unpack).glob('**')):
                 print(f'* {place}')
                 for thing in sorted(place.iterdir()):
@@ -154,9 +157,8 @@ def main(argv: Union[List[str], None] = None) -> int:
                     print(f'  - {thing}')
 
             out_root = MD_ROOT
-            print(f'would translate html tree from ({inp if inp else STDIN}) into markdown tree below {out_root}')
+            print(f'translating html tree from ({inp if inp else STDIN}) into markdown tree below {out_root}')
 
-            print('tasks:')
             start = None
             for task in tasks:
                 if task.name == 'index.html':
@@ -198,7 +200,8 @@ def main(argv: Union[List[str], None] = None) -> int:
 
             # Push the media assets (so the md format does not remove the links)
             if assets:
-                print(f'{len(assets)} distinct assets:')
+                nr_assets = len(assets)
+                print(f'imported {nr_assets} distinct asset{"" if nr_assets == 1 else "s"}:')
                 for asset in assets:
                     print(f'- {asset}')
                     asset_source = pathlib.Path(asset_source_root) / asset
@@ -210,5 +213,7 @@ def main(argv: Union[List[str], None] = None) -> int:
             for task in tasks:
                 task_path = out_root / task.name.replace('html', 'md')
                 mdformat.file(task_path, options={'number': True, 'wrap': 142})
+
+            print(f'markdown tree is below ({out_root})')
 
     return 0
