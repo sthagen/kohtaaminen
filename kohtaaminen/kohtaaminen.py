@@ -93,6 +93,7 @@ def filter_leaf(data: List[str], assets: List[str]) -> str:
             lines[ndx] = later + image
             if span_tail:
                 lines[ndx] += '\n</span>'
+
     resplit = []
     for line in lines:
         if '\n' not in line:
@@ -136,8 +137,8 @@ def main(argv: Union[List[str], None] = None) -> int:
             print('suspicious entries in zip file')
             # return 1
 
-        asset_source_root = None
-        assets = []
+        asset_source_root = ''
+        assets: List[str] = []
         with tempfile.TemporaryDirectory() as unpack:
             zipper.extractall(path=unpack)
             print(f'traversing unpack ({unpack})')
@@ -146,7 +147,7 @@ def main(argv: Union[List[str], None] = None) -> int:
                 for thing in sorted(place.iterdir()):
                     if thing.is_dir():
                         if not asset_source_root and thing.name == 'attachments':
-                            asset_source_root = pathlib.Path(thing.parent)
+                            asset_source_root = str(thing.parent)
                         continue
                     if thing.suffixes[-1] == '.html':
                         tasks.append(thing)
@@ -190,26 +191,24 @@ def main(argv: Union[List[str], None] = None) -> int:
                 with open(task_path, 'rt', encoding=ENCODING) as handle:
                     text = filter_leaf(
                         [line.rstrip() for line in handle.readlines() if '</div>' not in line and '<div ' not in line],
-                        assets
+                        assets,
                     )
                 with open(task_path, 'wt', encoding=ENCODING) as handle:
                     handle.write(text + '\n')
 
+            # Push the media assets (so the md format does not remove the links)
             if assets:
                 print(f'{len(assets)} distinct assets:')
                 for asset in assets:
                     print(f'- {asset}')
-                    asset_source = asset_source_root / asset
+                    asset_source = pathlib.Path(asset_source_root) / asset
                     asset_path = out_root / asset
                     asset_path.parent.mkdir(parents=True, exist_ok=True)
                     shutil.copyfile(asset_source, asset_path)
-
-            # Push the media assets (so the md format does not remove the links)
 
             # Format the markdown
             for task in tasks:
                 task_path = out_root / task.name.replace('html', 'md')
                 mdformat.file(task_path, options={'number': True, 'wrap': 142})
-
 
     return 0
