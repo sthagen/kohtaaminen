@@ -12,3 +12,7 @@ def test_ko_main():
 
 def test_ko_verify_request_too_few():
     assert ko.verify_request([1]) == (2, 'received wrong number of arguments', [''])
+
+
+def test_ko_verify_request_unknown_command():
+    assert ko.verify_request(['unknown', 'does not matter']) == (2, 'received unknown command', [''])
