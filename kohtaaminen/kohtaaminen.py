@@ -211,7 +211,10 @@ def main(argv: Union[List[str], None] = None) -> int:
                     asset_source = pathlib.Path(asset_source_root) / asset
                     asset_path = out_root / asset
                     asset_path.parent.mkdir(parents=True, exist_ok=True)
-                    shutil.copyfile(asset_source, asset_path)
+                    try:
+                        shutil.copyfile(asset_source, asset_path)
+                    except FileNotFoundError as err:
+                        print(' ... note: survived wrongly parsed file source path on shutil copy. details:', err)
 
             # Format the markdown
             for task in tasks:
