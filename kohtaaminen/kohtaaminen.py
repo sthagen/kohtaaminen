@@ -83,9 +83,13 @@ def filter_leaf(data: List[str], assets: List[str]) -> str:
             src, rest = image_tail.split('" ', 1)
             if src not in assets:
                 assets.append(src)
-            _, height_plus = rest.split('data-height="', 1)
-            height, width_plus = height_plus.split('" data-width="', 1)
-            width, _ = width_plus.split('" ', 1)
+            try:
+                _, height_plus = rest.split('data-height="', 1)
+                height, width_plus = height_plus.split('" data-width="', 1)
+                width, _ = width_plus.split('" ', 1)
+            except ValueError as err:
+                print(' ... note: survived image parsing with crash, using defaults. details:', err)
+                height, width, center = 42, 42, False
             center = 'image-center' in line
             span_tail = line.endswith('</span>')
             attributes = f'width:{width}, height:{height}, center:{"true" if center else "false"}'
