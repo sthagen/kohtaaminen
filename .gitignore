@@ -134,3 +134,4 @@ dmypy.json
 kohtaaminen-md/
 local_publi.sh
 .vscode/
+local_*
