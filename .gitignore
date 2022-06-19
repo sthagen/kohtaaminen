@@ -133,3 +133,4 @@ dmypy.json
 .idea
 kohtaaminen-md/
 local_publi.sh
+.vscode/
