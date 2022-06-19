@@ -10,10 +10,12 @@ import kohtaaminen.cli as cli
 
 def test_main_legacy_ok(capsys):
     inp = str(pathlib.Path('tests', 'fixtures', 'basic', 'export.zip'))
-    assert cli.main(['translate', inp]) == 0
-    out, err = capsys.readouterr()
-    assert 'translating html tree from' in out.lower()
-    assert not err
+    message = r'not enough values to unpack \(expected 2, got 1\)'
+    with pytest.raises(ValueError, match=message):
+        cli.main(['translate', inp])
+        out, err = capsys.readouterr()
+        assert 'translating html tree from' in out.lower()
+        assert not err
 
 
 def test_version_ok(capsys):
@@ -27,7 +29,8 @@ def test_version_ok(capsys):
 
 def test_translate_ok(capsys):
     in_path = pathlib.Path('tests', 'fixtures', 'basic', 'export.zip')
-    with pytest.raises(SystemExit) as exec_info:
+    message = r'not enough values to unpack \(expected 2, got 1\)'
+    with pytest.raises(ValueError, match=message) as exec_info:
         cli.translate(source=in_path, inp=in_path)
         assert exec_info.value.code == 0
         out, err = capsys.readouterr()

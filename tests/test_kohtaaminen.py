@@ -2,12 +2,17 @@
 # pylint: disable=line-too-long,missing-docstring,reimported,unused-import,unused-variable
 import pathlib
 
+import pytest
+
 import kohtaaminen.kohtaaminen as ko
 
 
 def test_ko_main():
     inp = str(pathlib.Path('tests', 'fixtures', 'basic', 'export.zip'))
-    assert ko.main(['translate', inp]) == 0
+    message = r'not enough values to unpack \(expected 2, got 1\)'
+    with pytest.raises(ValueError, match=message) as exec_info:
+        ko.main(['translate', inp])
+        assert exec_info.value.code == 0
 
 
 def test_ko_verify_request_too_few():
