@@ -3,7 +3,7 @@ package = shagen/kohtaaminen
 
 .DEFAULT_GOAL := all
 isort = isort kohtaaminen tests
-black = black -S -l 120 --target-version py38 kohtaaminen tests
+black = black -S -l 120 --target-version py39 kohtaaminen tests
 
 .PHONY: install
 install:
@@ -15,7 +15,7 @@ install:
 install-all: install
 	pip install -r tests/requirements-dev.txt
 
-.PHONY: isort
+.PHONY: format
 format:
 	$(isort)
 	$(black)
@@ -38,7 +38,7 @@ mypy:
 
 .PHONY: test
 test: clean
-	pytest --cov=kohtaaminen --log-format="%(levelname)s %(message)s"
+	pytest --asyncio-mode=strict --cov=kohtaaminen --cov-report term-missing:skip-covered --cov-branch --log-format="%(levelname)s %(message)s"
 
 .PHONY: testcov
 testcov: test
