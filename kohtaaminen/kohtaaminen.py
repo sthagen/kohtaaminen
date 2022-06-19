@@ -89,7 +89,7 @@ def filter_leaf(data: List[str], assets: List[str]) -> str:
                 width, _ = width_plus.split('" ', 1)
             except ValueError as err:
                 print(' ... note: survived image parsing with crash, using defaults. details:', err)
-                height, width, center = 42, 42, False
+                height, width, center = '42', '42', False
             center = 'image-center' in line
             span_tail = line.endswith('</span>')
             attributes = f'width:{width}, height:{height}, center:{"true" if center else "false"}'
@@ -179,7 +179,7 @@ def main(argv: Union[List[str], None] = None) -> int:
 
             index_path = out_root / 'index.md'
             index_path.parent.mkdir(parents=True, exist_ok=True)
-            output = pypandoc.convert_file(str(start), 'markdown_github', outputfile=str(index_path))
+            output = pypandoc.convert_file(str(start), 'gfm', outputfile=str(index_path))
             assert output == ''
             with open(index_path, 'rt', encoding=ENCODING) as handle:
                 text = filter_index(
@@ -192,7 +192,7 @@ def main(argv: Union[List[str], None] = None) -> int:
                 if task == start:
                     continue
                 task_path = out_root / task.name.replace('html', 'md')
-                output = pypandoc.convert_file(str(task), 'markdown_github', outputfile=str(task_path))
+                output = pypandoc.convert_file(str(task), 'gfm', outputfile=str(task_path))
                 assert output == ''
                 with open(task_path, 'rt', encoding=ENCODING) as handle:
                     text = filter_leaf(
