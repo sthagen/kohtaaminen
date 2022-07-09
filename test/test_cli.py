@@ -9,7 +9,7 @@ import kohtaaminen.cli as cli
 
 
 def test_main_legacy_ok(capsys):
-    inp = str(pathlib.Path('tests', 'fixtures', 'basic', 'export.zip'))
+    inp = str(pathlib.Path('test', 'fixtures', 'basic', 'export.zip'))
     message = r'not enough values to unpack \(expected 2, got 1\)'
     with pytest.raises(ValueError, match=message):
         cli.main(['translate', inp])
@@ -28,7 +28,7 @@ def test_version_ok(capsys):
 
 
 def test_translate_ok(capsys):
-    in_path = pathlib.Path('tests', 'fixtures', 'basic', 'export.zip')
+    in_path = pathlib.Path('test', 'fixtures', 'basic', 'export.zip')
     message = r'not enough values to unpack \(expected 2, got 1\)'
     with pytest.raises(ValueError, match=message) as exec_info:
         cli.translate(source=in_path, inp=in_path)
@@ -39,7 +39,7 @@ def test_translate_ok(capsys):
 
 
 def test_translate_non_zip(capsys):
-    in_path = pathlib.Path('tests', 'fixtures', 'basic', 'no.zip')
+    in_path = pathlib.Path('test', 'fixtures', 'basic', 'no.zip')
     with pytest.raises(SystemExit) as exec_info:
         cli.translate(source=in_path, inp=in_path)
         assert exec_info.value.code == 1

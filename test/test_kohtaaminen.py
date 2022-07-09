@@ -8,7 +8,7 @@ import kohtaaminen.kohtaaminen as ko
 
 
 def test_ko_main():
-    inp = str(pathlib.Path('tests', 'fixtures', 'basic', 'export.zip'))
+    inp = str(pathlib.Path('test', 'fixtures', 'basic', 'export.zip'))
     message = r'not enough values to unpack \(expected 2, got 1\)'
     with pytest.raises(ValueError, match=message) as exec_info:
         ko.main(['translate', inp])
@@ -29,5 +29,5 @@ def test_ko_verify_request_falsy_input():
 
 
 def test_ko_verify_request_input_has_wrong_extension():
-    inp = str(pathlib.Path('tests', 'fixtures', 'basic', 'wrong.extension'))
+    inp = str(pathlib.Path('test', 'fixtures', 'basic', 'wrong.extension'))
     assert ko.verify_request(['translate', inp]) == (1, 'source has not .zip extension', [''])
