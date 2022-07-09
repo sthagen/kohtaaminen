@@ -2,18 +2,18 @@ SHELL = /bin/bash
 package = shagen/kohtaaminen
 
 .DEFAULT_GOAL := all
-isort = isort kohtaaminen tests
-black = black -S -l 120 --target-version py39 kohtaaminen tests
+isort = isort kohtaaminen test
+black = black -S -l 120 --target-version py39 kohtaaminen test
 
 .PHONY: install
 install:
 	pip install -U pip wheel
-	pip install -r tests/requirements.txt
+	pip install -r test/requirements.txt
 	pip install -U .
 
 .PHONY: install-all
 install-all: install
-	pip install -r tests/requirements-dev.txt
+	pip install -r test/requirements-dev.txt
 
 .PHONY: format
 format:
@@ -22,13 +22,13 @@ format:
 
 .PHONY: init
 init:
-	pip install -r tests/requirements.txt
-	pip install -r tests/requirements-dev.txt
+	pip install -r test/requirements.txt
+	pip install -r test/requirements-dev.txt
 
 .PHONY: lint
 lint:
 	python setup.py check -ms
-	flake8 kohtaaminen/ tests/
+	flake8 kohtaaminen/ test/
 	$(isort) --check-only --df
 	$(black) --check --diff
 
