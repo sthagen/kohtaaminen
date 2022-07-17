@@ -62,3 +62,4 @@ clean:
 	@rm -f *.log
 	@rm -fr kohtaaminen-md/
 	python setup.py clean
+	@rm -fr site/*
