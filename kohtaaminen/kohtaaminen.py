@@ -180,7 +180,7 @@ def main(argv: Union[List[str], None] = None) -> int:
             index_path = out_root / 'index.md'
             index_path.parent.mkdir(parents=True, exist_ok=True)
             output = pypandoc.convert_file(str(start), 'gfm', outputfile=str(index_path))
-            assert output == ''
+            # assert output == ''
             with open(index_path, 'rt', encoding=ENCODING) as handle:
                 text = filter_index(
                     [line.rstrip() for line in handle.readlines() if '</div>' not in line and '<div ' not in line]
@@ -193,7 +193,7 @@ def main(argv: Union[List[str], None] = None) -> int:
                     continue
                 task_path = out_root / task.name.replace('html', 'md')
                 output = pypandoc.convert_file(str(task), 'gfm', outputfile=str(task_path))
-                assert output == ''
+                # assert output == ''
                 with open(task_path, 'rt', encoding=ENCODING) as handle:
                     text = filter_leaf(
                         [line.rstrip() for line in handle.readlines() if '</div>' not in line and '<div ' not in line],
