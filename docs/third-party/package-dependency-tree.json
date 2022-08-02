@@ -1,0 +1,168 @@
+[
+    {
+        "key": "mdformat-gfm",
+        "package_name": "mdformat-gfm",
+        "installed_version": "0.3.5",
+        "required_version": "0.3.5",
+        "dependencies": [
+            {
+                "key": "markdown-it-py",
+                "package_name": "markdown-it-py",
+                "installed_version": "2.1.0",
+                "required_version": "Any",
+                "dependencies": [
+                    {
+                        "key": "mdurl",
+                        "package_name": "mdurl",
+                        "installed_version": "0.1.1",
+                        "required_version": "~=0.1",
+                        "dependencies": []
+                    }
+                ]
+            },
+            {
+                "key": "mdformat",
+                "package_name": "mdformat",
+                "installed_version": "0.7.14",
+                "required_version": ">=0.7.5,<0.8.0",
+                "dependencies": [
+                    {
+                        "key": "importlib-metadata",
+                        "package_name": "importlib-metadata",
+                        "installed_version": "4.11.4",
+                        "required_version": ">=3.6.0",
+                        "dependencies": [
+                            {
+                                "key": "zipp",
+                                "package_name": "zipp",
+                                "installed_version": "3.8.0",
+                                "required_version": ">=0.5",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "markdown-it-py",
+                        "package_name": "markdown-it-py",
+                        "installed_version": "2.1.0",
+                        "required_version": ">=1.0.0b2,<3.0.0",
+                        "dependencies": [
+                            {
+                                "key": "mdurl",
+                                "package_name": "mdurl",
+                                "installed_version": "0.1.1",
+                                "required_version": "~=0.1",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "tomli",
+                        "package_name": "tomli",
+                        "installed_version": "2.0.1",
+                        "required_version": ">=1.1.0",
+                        "dependencies": []
+                    }
+                ]
+            },
+            {
+                "key": "mdformat-tables",
+                "package_name": "mdformat-tables",
+                "installed_version": "0.4.1",
+                "required_version": ">=0.4.0",
+                "dependencies": [
+                    {
+                        "key": "mdformat",
+                        "package_name": "mdformat",
+                        "installed_version": "0.7.14",
+                        "required_version": ">=0.7.5,<0.8.0",
+                        "dependencies": [
+                            {
+                                "key": "importlib-metadata",
+                                "package_name": "importlib-metadata",
+                                "installed_version": "4.11.4",
+                                "required_version": ">=3.6.0",
+                                "dependencies": [
+                                    {
+                                        "key": "zipp",
+                                        "package_name": "zipp",
+                                        "installed_version": "3.8.0",
+                                        "required_version": ">=0.5",
+                                        "dependencies": []
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "markdown-it-py",
+                                "package_name": "markdown-it-py",
+                                "installed_version": "2.1.0",
+                                "required_version": ">=1.0.0b2,<3.0.0",
+                                "dependencies": [
+                                    {
+                                        "key": "mdurl",
+                                        "package_name": "mdurl",
+                                        "installed_version": "0.1.1",
+                                        "required_version": "~=0.1",
+                                        "dependencies": []
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "tomli",
+                                "package_name": "tomli",
+                                "installed_version": "2.0.1",
+                                "required_version": ">=1.1.0",
+                                "dependencies": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "mdit-py-plugins",
+                "package_name": "mdit-py-plugins",
+                "installed_version": "0.3.0",
+                "required_version": ">=0.2.0,<0.4.0",
+                "dependencies": [
+                    {
+                        "key": "markdown-it-py",
+                        "package_name": "markdown-it-py",
+                        "installed_version": "2.1.0",
+                        "required_version": ">=1.0.0,<3.0.0",
+                        "dependencies": [
+                            {
+                                "key": "mdurl",
+                                "package_name": "mdurl",
+                                "installed_version": "0.1.1",
+                                "required_version": "~=0.1",
+                                "dependencies": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key": "pypandoc",
+        "package_name": "pypandoc",
+        "installed_version": "1.8.1",
+        "required_version": "1.8.1",
+        "dependencies": []
+    },
+    {
+        "key": "typer",
+        "package_name": "typer",
+        "installed_version": "0.4.2",
+        "required_version": "0.4.2",
+        "dependencies": [
+            {
+                "key": "click",
+                "package_name": "click",
+                "installed_version": "8.1.3",
+                "required_version": ">=7.1.1,<9.0.0",
+                "dependencies": []
+            }
+        ]
+    }
+]

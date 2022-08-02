@@ -1,0 +1,22 @@
+mdformat-gfm==0.3.5
+  - markdown-it-py [required: Any, installed: 2.1.0]
+    - mdurl [required: ~=0.1, installed: 0.1.1]
+  - mdformat [required: >=0.7.5,<0.8.0, installed: 0.7.14]
+    - importlib-metadata [required: >=3.6.0, installed: 4.11.4]
+      - zipp [required: >=0.5, installed: 3.8.0]
+    - markdown-it-py [required: >=1.0.0b2,<3.0.0, installed: 2.1.0]
+      - mdurl [required: ~=0.1, installed: 0.1.1]
+    - tomli [required: >=1.1.0, installed: 2.0.1]
+  - mdformat-tables [required: >=0.4.0, installed: 0.4.1]
+    - mdformat [required: >=0.7.5,<0.8.0, installed: 0.7.14]
+      - importlib-metadata [required: >=3.6.0, installed: 4.11.4]
+        - zipp [required: >=0.5, installed: 3.8.0]
+      - markdown-it-py [required: >=1.0.0b2,<3.0.0, installed: 2.1.0]
+        - mdurl [required: ~=0.1, installed: 0.1.1]
+      - tomli [required: >=1.1.0, installed: 2.0.1]
+  - mdit-py-plugins [required: >=0.2.0,<0.4.0, installed: 0.3.0]
+    - markdown-it-py [required: >=1.0.0,<3.0.0, installed: 2.1.0]
+      - mdurl [required: ~=0.1, installed: 0.1.1]
+pypandoc==1.8.1
+typer==0.4.2
+  - click [required: >=7.1.1,<9.0.0, installed: 8.1.3]
