@@ -1,4 +1,6 @@
-# Example Usage
+# Usage
+
+## Examples
 
 Export zip file with conventions adhering html and media tree:
 ```console
