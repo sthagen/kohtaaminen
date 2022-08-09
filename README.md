@@ -19,7 +19,7 @@ User and developer [documentation of kohtaaminen](https://codes.dilettant.life/d
 
 ## Bug Tracker
 
-Feature requests and bug reports are bested entered in the [todos of kohtaaminen](https://todo.sr.ht/~sthagen/kohtaaminen).
+Feature requests and bug reports are best entered in the [todos of kohtaaminen](https://todo.sr.ht/~sthagen/kohtaaminen).
 
 ## Primary Source repository
 
