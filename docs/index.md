@@ -15,7 +15,7 @@ the tool produces a markdown media tree below `kohtaaminen-md`.
 
 ## Bug Tracker
 
-Feature requests and bug reports are bested entered in the [todos of kohtaaminen](https://todo.sr.ht/~sthagen/kohtaaminen).
+Feature requests and bug reports are best entered in the [todos of kohtaaminen](https://todo.sr.ht/~sthagen/kohtaaminen).
 
 ## Primary Source repository
 
