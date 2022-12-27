@@ -1,0 +1,9 @@
+---
+packages:
+- click
+- markdown-it-py
+- mdformat
+- mdformat-tables
+- mdit-py-plugins
+- mdurl
+- tomli
