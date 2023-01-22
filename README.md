@@ -7,7 +7,7 @@ the tool produces a markdown media tree below `kohtaaminen-md`.
 
 [License: MIT](https://git.sr.ht/~sthagen/kohtaaminen/tree/default/item/LICENSE)
 
-Third party dependencies are documented in the folder [third-party](third-party/README.md).
+Third party dependencies are documented in the folder [third-party](docs/third-party/README.md).
 
 [![version](https://img.shields.io/pypi/v/kohtaaminen.svg?style=flat)](https://pypi.python.org/pypi/kohtaaminen/)
 [![downloads](https://pepy.tech/badge/kohtaaminen/month)](https://pepy.tech/project/kohtaaminen)
