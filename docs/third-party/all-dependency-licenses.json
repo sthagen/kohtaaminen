@@ -12,7 +12,7 @@
     "Version": "8.1.3"
   },
   {
-    "Author": "UNKNOWN",
+    "Author": "Chris Sewell <chrisj_sewell@hotmail.com>",
     "Description": "Python port of markdown-it. Markdown parsing, done right!",
     "License": "MIT License",
     "LicenseFile": "/Users/ruth/.pyenv/versions/3.10.9/envs/kohtaaminen-3-10-9/lib/python3.10/site-packages/markdown_it_py-2.1.0.dist-info/LICENSE",
@@ -20,11 +20,11 @@
     "Name": "markdown-it-py",
     "NoticeFile": "UNKNOWN",
     "NoticeText": "UNKNOWN",
-    "URL": "UNKNOWN",
+    "URL": "https://github.com/executablebooks/markdown-it-py",
     "Version": "2.1.0"
   },
   {
-    "Author": "UNKNOWN",
+    "Author": "Taneli Hukkinen <hukkin@users.noreply.github.com>",
     "Description": "CommonMark compliant Markdown formatter",
     "License": "MIT License",
     "LicenseFile": "/Users/ruth/.pyenv/versions/3.10.9/envs/kohtaaminen-3-10-9/lib/python3.10/site-packages/mdformat-0.7.16.dist-info/LICENSE",
@@ -32,7 +32,7 @@
     "Name": "mdformat",
     "NoticeFile": "UNKNOWN",
     "NoticeText": "UNKNOWN",
-    "URL": "UNKNOWN",
+    "URL": "https://github.com/executablebooks/mdformat",
     "Version": "0.7.16"
   },
   {
@@ -48,7 +48,19 @@
     "Version": "0.3.5"
   },
   {
-    "Author": "UNKNOWN",
+    "Author": "Chris Sewell",
+    "Description": "An mdformat plugin for rendering tables.",
+    "License": "MIT License",
+    "LicenseFile": "/Users/ruth/.pyenv/versions/3.10.9/envs/kohtaaminen-3-10-9/lib/python3.10/site-packages/mdformat_tables-0.4.1.dist-info/LICENSE",
+    "LicenseText": "MIT License\n\nCopyright (c) 2020 Executable Books\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+    "Name": "mdformat_tables",
+    "NoticeFile": "UNKNOWN",
+    "NoticeText": "UNKNOWN",
+    "URL": "https://github.com/executablebooks/mdformat-tables",
+    "Version": "0.4.1"
+  },
+  {
+    "Author": "Chris Sewell <chrisj_sewell@hotmail.com>",
     "Description": "Collection of plugins for markdown-it-py",
     "License": "MIT License",
     "LicenseFile": "/Users/ruth/.pyenv/versions/3.10.9/envs/kohtaaminen-3-10-9/lib/python3.10/site-packages/mdit_py_plugins-0.3.3.dist-info/LICENSE",
@@ -56,11 +68,11 @@
     "Name": "mdit-py-plugins",
     "NoticeFile": "UNKNOWN",
     "NoticeText": "UNKNOWN",
-    "URL": "UNKNOWN",
+    "URL": "https://github.com/executablebooks/mdit-py-plugins",
     "Version": "0.3.3"
   },
   {
-    "Author": "UNKNOWN",
+    "Author": "Taneli Hukkinen <hukkin@users.noreply.github.com>",
     "Description": "Markdown URL utilities",
     "License": "MIT License",
     "LicenseFile": "/Users/ruth/.pyenv/versions/3.10.9/envs/kohtaaminen-3-10-9/lib/python3.10/site-packages/mdurl-0.1.2.dist-info/LICENSE",
@@ -68,23 +80,23 @@
     "Name": "mdurl",
     "NoticeFile": "UNKNOWN",
     "NoticeText": "UNKNOWN",
-    "URL": "UNKNOWN",
+    "URL": "https://github.com/executablebooks/mdurl",
     "Version": "0.1.2"
   },
   {
     "Author": "b'Juho Veps\\xc3\\xa4l\\xc3\\xa4inen'",
     "Description": "Thin wrapper for pandoc.",
     "License": "MIT License",
-    "LicenseFile": "/Users/ruth/.pyenv/versions/3.10.9/envs/kohtaaminen-3-10-9/lib/python3.10/site-packages/pypandoc-1.10.dist-info/LICENSE",
+    "LicenseFile": "/Users/ruth/.pyenv/versions/3.10.9/envs/kohtaaminen-3-10-9/lib/python3.10/site-packages/pypandoc-1.11.dist-info/LICENSE",
     "LicenseText": "Copyright (c) 2011 Juho Veps\u00e4l\u00e4inen\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\"Software\"), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE\nLIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION\nOF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION\nWITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\ncompat code from IPython py3compat.py and encoding.py, which is licensed\nthe terms of the Modified BSD License (also known as New or\nRevised or 3-Clause BSD)\n\n- Copyright (c) 2008-2014, IPython Development Team\n- Copyright (c) 2001-2007, Fernando Perez <fernando.perez@colorado.edu>\n- Copyright (c) 2001, Janko Hauser <jhauser@zscout.de>\n- Copyright (c) 2001, Nathaniel Gray <n8gray@caltech.edu>\n\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are\nmet:\n\nRedistributions of source code must retain the above copyright notice,\nthis list of conditions and the following disclaimer.\n\nRedistributions in binary form must reproduce the above copyright notice,\nthis list of conditions and the following disclaimer in the documentation\nand/or other materials provided with the distribution.\n\nNeither the name of the IPython Development Team nor the names of its\ncontributors may be used to endorse or promote products derived from this\nsoftware without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS\nIS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,\nTHE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\nPURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR\nCONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,\nEXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,\nPROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR\nPROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\nLIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\nNEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n",
     "Name": "pypandoc",
     "NoticeFile": "UNKNOWN",
     "NoticeText": "UNKNOWN",
     "URL": "https://github.com/JessicaTegner/pypandoc",
-    "Version": "1.10"
+    "Version": "1.11"
   },
   {
-    "Author": "UNKNOWN",
+    "Author": "Taneli Hukkinen <hukkin@users.noreply.github.com>",
     "Description": "A lil' TOML parser",
     "License": "MIT License",
     "LicenseFile": "/Users/ruth/.pyenv/versions/3.10.9/envs/kohtaaminen-3-10-9/lib/python3.10/site-packages/tomli-2.0.1.dist-info/LICENSE",
@@ -92,7 +104,7 @@
     "Name": "tomli",
     "NoticeFile": "UNKNOWN",
     "NoticeText": "UNKNOWN",
-    "URL": "UNKNOWN",
+    "URL": "https://github.com/hukkin/tomli",
     "Version": "2.0.1"
   },
   {
