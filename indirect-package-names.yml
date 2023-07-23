@@ -7,3 +7,4 @@ packages:
 - mdit-py-plugins
 - mdurl
 - tomli
+- typing-extensions
