@@ -1,5 +1,7 @@
 site_name: Kohtaaminen
 site_description: "Meeting, rendezvous, confluence (Finnish: kohtaaminen) mark up, down, and up again."
+docs_dir: ../docs
+site_dir: ../site
 
 theme:
   name: 'material'
