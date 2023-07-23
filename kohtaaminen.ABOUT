@@ -1,0 +1,14 @@
+name: kohtaaminen
+description: Meeting, rendezvous, confluence (Finnish: kohtaaminen) mark up, down, and up again.
+license_spdx: MIT
+version: 2022.8.2
+spec_version: 1.0
+home_url: https://git.sr.ht/~sthagen/kohtaaminen
+news_url: https://libraries.io/pypi/kohtaaminen/versions.atom
+date: 2022-08-02
+about_resource: ./
+libraries_io_url: https://libraries.io/pypi/kohtaaminen?number=2022.8.2
+vcs_tool: git
+vcs_repository: https://git.sr.ht/~sthagen/kohtaaminen
+vcs_branch: default
+
