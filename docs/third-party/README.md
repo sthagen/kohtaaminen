@@ -1,8 +1,8 @@
 # Third Party Dependencies
 
 <!--[[[fill sbom_sha256()]]]-->
-The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/kohtaaminen/blob/default/sbom/cdx.json) with SHA256 checksum ([39a73360 ...](https://git.sr.ht/~sthagen/kohtaaminen/blob/default/sbom/cdx.json.sha256 "sha256:39a73360f14b85323bf4a8a7d355bedd8670dcba50931125c41f231429077c6a")).
-<!--[[[end]]] (checksum: da35de66675d97d9fa8216699d163cb3)-->
+The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/kohtaaminen/blob/default/sbom/cdx.json) with SHA256 checksum ([2a45720e ...](https://git.sr.ht/~sthagen/kohtaaminen/blob/default/sbom/cdx.json.sha256 "sha256:2a45720e59246fcd6c756c17168dd1f51635bdd72971105b3d746b39bec5fd3c")).
+<!--[[[end]]] (checksum: 6fe22dc4e6c61bcccff5e678c4c28177)-->
 ## Licenses 
 
 JSON files with complete license info of: [direct dependencies](direct-dependency-licenses.json) | [all dependencies](all-dependency-licenses.json)
@@ -10,12 +10,12 @@ JSON files with complete license info of: [direct dependencies](direct-dependenc
 ### Direct Dependencies
 
 <!--[[[fill direct_dependencies_table()]]]-->
-| Name                                                     | Version                                               | License     | Author                            | Description (from packaging data)                                  |
-|:---------------------------------------------------------|:------------------------------------------------------|:------------|:----------------------------------|:-------------------------------------------------------------------|
-| [mdformat-gfm](https://github.com/hukkinj1/mdformat-gfm) | [0.3.5](https://pypi.org/project/mdformat-gfm/0.3.5/) | MIT License | Taneli Hukkinen                   | Mdformat plugin for GitHub Flavored Markdown compatibility         |
-| [pypandoc](https://github.com/JessicaTegner/pypandoc)    | [1.11](https://pypi.org/project/pypandoc/1.11/)       | MIT License | b'Juho Veps\xc3\xa4l\xc3\xa4inen' | Thin wrapper for pandoc.                                           |
-| [typer](https://github.com/tiangolo/typer)               | [0.9.0](https://pypi.org/project/typer/0.9.0/)        | MIT License | Sebastián Ramírez                 | Typer, build great CLIs. Easy to code. Based on Python type hints. |
-<!--[[[end]]] (checksum: 44402ad7d8b6bbdc42edf940c6f3974a)-->
+| Name                                                     | Version                                               | License     | Author            | Description (from packaging data)                                  |
+|:---------------------------------------------------------|:------------------------------------------------------|:------------|:------------------|:-------------------------------------------------------------------|
+| [mdformat-gfm](https://github.com/hukkinj1/mdformat-gfm) | [0.3.5](https://pypi.org/project/mdformat-gfm/0.3.5/) | MIT License | Taneli Hukkinen   | Mdformat plugin for GitHub Flavored Markdown compatibility         |
+| [pypandoc](https://github.com/JessicaTegner/pypandoc)    | [1.11](https://pypi.org/project/pypandoc/1.11/)       | MIT License | Juho Vepsäläinen  | Thin wrapper for pandoc.                                           |
+| [typer](https://github.com/tiangolo/typer)               | [0.9.0](https://pypi.org/project/typer/0.9.0/)        | MIT License | Sebastián Ramírez | Typer, build great CLIs. Easy to code. Based on Python type hints. |
+<!--[[[end]]] (checksum: 7f96ec7d2e5ec9fdd2cbcb688582b5b1)-->
 
 ### Indirect Dependencies
 
