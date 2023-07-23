@@ -31,6 +31,7 @@ authors:
   mdurl: Taneli Hukkinen
   msgspec: Jim Crist-Harif
   numcodecs: Alistair Miles
+  pypandoc: Juho Vepsäläinen
   pyparsing: Paul McGuire
   starlette: Tom Christie
   taksonomia: Stefan Hagen

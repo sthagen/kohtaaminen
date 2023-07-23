@@ -154,10 +154,10 @@ def _extract_rows(data):
         ver_sion = f'[{ver}](https://pypi.org/project/{nam}/{ver}/)'
         lic = record['License']
         aut = record['Author']
-        if aut == 'UNKNOWN' and nam in FALLBACK_AUTHORS:
+        if (aut == 'UNKNOWN' or "b'" in aut) and nam in FALLBACK_AUTHORS:
             aut = FALLBACK_AUTHORS[nam]
         des = record['Description']
-        if des in ('UNKNOWN', nam)  and nam in FALLBACK_DESCRIPTIONS:
+        if des in ('UNKNOWN', nam) and nam in FALLBACK_DESCRIPTIONS:
             des = FALLBACK_DESCRIPTIONS[nam]
         rows.append((nam_e, ver_sion, lic, aut, des))
     rows.sort()
