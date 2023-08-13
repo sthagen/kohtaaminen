@@ -8,7 +8,7 @@
             {
                 "key": "markdown-it-py",
                 "package_name": "markdown-it-py",
-                "installed_version": "2.1.0",
+                "installed_version": "2.2.0",
                 "required_version": "Any",
                 "dependencies": [
                     {
@@ -29,7 +29,7 @@
                     {
                         "key": "markdown-it-py",
                         "package_name": "markdown-it-py",
-                        "installed_version": "2.1.0",
+                        "installed_version": "2.2.0",
                         "required_version": ">=1.0.0,<3.0.0",
                         "dependencies": [
                             {
@@ -65,7 +65,7 @@
                             {
                                 "key": "markdown-it-py",
                                 "package_name": "markdown-it-py",
-                                "installed_version": "2.1.0",
+                                "installed_version": "2.2.0",
                                 "required_version": ">=1.0.0,<3.0.0",
                                 "dependencies": [
                                     {
@@ -91,13 +91,13 @@
             {
                 "key": "mdit-py-plugins",
                 "package_name": "mdit-py-plugins",
-                "installed_version": "0.3.3",
+                "installed_version": "0.3.5",
                 "required_version": ">=0.2.0,<0.4.0",
                 "dependencies": [
                     {
                         "key": "markdown-it-py",
                         "package_name": "markdown-it-py",
-                        "installed_version": "2.1.0",
+                        "installed_version": "2.2.0",
                         "required_version": ">=1.0.0,<3.0.0",
                         "dependencies": [
                             {
@@ -129,14 +129,14 @@
             {
                 "key": "click",
                 "package_name": "click",
-                "installed_version": "8.1.3",
+                "installed_version": "8.1.6",
                 "required_version": ">=7.1.1,<9.0.0",
                 "dependencies": []
             },
             {
                 "key": "typing-extensions",
                 "package_name": "typing-extensions",
-                "installed_version": "4.4.0",
+                "installed_version": "4.7.1",
                 "required_version": ">=3.7.4.3",
                 "dependencies": []
             }
