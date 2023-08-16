@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.4.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:2f9769f4-b400-4431-858e-83dcabe604c9",
+  "serialNumber": "urn:uuid:1b504571-cda4-4054-8bf5-b33f459a5786",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-08-15T06:02:12.087933+00:00",
+    "timestamp": "2023-08-16T06:21:15.117256+00:00",
     "tools": [
       {
         "vendor": "CycloneDX",
@@ -56,21 +56,21 @@
   "components": [
     {
       "type": "library",
-      "bom-ref": "d9fd0179-c2b0-4302-ba32-7020ca9ba3e9",
+      "bom-ref": "99143791-cee5-40b1-9889-40882a97c823",
       "name": "mdformat-gfm",
       "version": "0.3.5",
       "purl": "pkg:pypi/mdformat-gfm@0.3.5"
     },
     {
       "type": "library",
-      "bom-ref": "0a20ae5b-c524-4020-8a48-20c87b4b3143",
+      "bom-ref": "2afe4495-e4b1-4fe7-8ec2-f97caa540482",
       "name": "pypandoc",
       "version": "1.11",
       "purl": "pkg:pypi/pypandoc@1.11"
     },
     {
       "type": "library",
-      "bom-ref": "08f5cf7d-0e5d-49c7-8c5c-5fa12db94ddc",
+      "bom-ref": "fdb19e4a-2570-494f-bfad-b4535a6bfaec",
       "name": "typer",
       "version": "0.9.0",
       "purl": "pkg:pypi/typer@0.9.0"
@@ -78,15 +78,15 @@
   ],
   "dependencies": [
     {
-      "ref": "d9fd0179-c2b0-4302-ba32-7020ca9ba3e9",
+      "ref": "99143791-cee5-40b1-9889-40882a97c823",
       "dependsOn": []
     },
     {
-      "ref": "0a20ae5b-c524-4020-8a48-20c87b4b3143",
+      "ref": "2afe4495-e4b1-4fe7-8ec2-f97caa540482",
       "dependsOn": []
     },
     {
-      "ref": "08f5cf7d-0e5d-49c7-8c5c-5fa12db94ddc",
+      "ref": "fdb19e4a-2570-494f-bfad-b4535a6bfaec",
       "dependsOn": []
     }
   ]
