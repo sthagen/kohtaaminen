@@ -1,8 +1,8 @@
 # Third Party Dependencies
 
 <!--[[[fill sbom_sha256()]]]-->
-The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/kohtaaminen/blob/default/etc/sbom/cdx.json) with SHA256 checksum ([a9c9321b ...](https://git.sr.ht/~sthagen/kohtaaminen/blob/default/etc/sbom/cdx.json.sha256 "sha256:a9c9321bde89e60965b3f196a084f3c2bec9b8e3996e19be04a652797afb6d3c")).
-<!--[[[end]]] (checksum: 7c48e6a15a9ec440476a8df40419b5a0)-->
+The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/kohtaaminen/blob/default/etc/sbom/cdx.json) with SHA256 checksum ([6e85c71f ...](https://git.sr.ht/~sthagen/kohtaaminen/blob/default/etc/sbom/cdx.json.sha256 "sha256:6e85c71fa8c0af3278c70a5ad012cf4f4744e3055248b7b72980e4893ccced22")).
+<!--[[[end]]] (checksum: b043b24ef13ef9b9fc210c634e24aff9)-->
 ## Licenses 
 
 JSON files with complete license info of: [direct dependencies](direct-dependency-licenses.json) | [all dependencies](all-dependency-licenses.json)
@@ -22,7 +22,7 @@ JSON files with complete license info of: [direct dependencies](direct-dependenc
 <!--[[[fill indirect_dependencies_table()]]]-->
 | Name                                                                  | Version                                                    | License                            | Author                                                                                | Description (from packaging data)                         |
 |:----------------------------------------------------------------------|:-----------------------------------------------------------|:-----------------------------------|:--------------------------------------------------------------------------------------|:----------------------------------------------------------|
-| [click](https://palletsprojects.com/p/click/)                         | [8.1.6](https://pypi.org/project/click/8.1.6/)             | BSD License                        | UNKNOWN                                                                               | Composable command line interface toolkit                 |
+| [click](https://palletsprojects.com/p/click/)                         | [8.1.6](https://pypi.org/project/click/8.1.6/)             | BSD License                        | Pallets <contact@palletsprojects.com>                                                 | Composable command line interface toolkit                 |
 | [markdown-it-py](https://github.com/executablebooks/markdown-it-py)   | [2.2.0](https://pypi.org/project/markdown-it-py/2.2.0/)    | MIT License                        | Chris Sewell <chrisj_sewell@hotmail.com>                                              | Python port of markdown-it. Markdown parsing, done right! |
 | [mdformat](https://github.com/executablebooks/mdformat)               | [0.7.16](https://pypi.org/project/mdformat/0.7.16/)        | MIT License                        | Taneli Hukkinen <hukkin@users.noreply.github.com>                                     | CommonMark compliant Markdown formatter                   |
 | [mdformat_tables](https://github.com/executablebooks/mdformat-tables) | [0.4.1](https://pypi.org/project/mdformat_tables/0.4.1/)   | MIT License                        | Chris Sewell                                                                          | An mdformat plugin for rendering tables.                  |
@@ -30,7 +30,7 @@ JSON files with complete license info of: [direct dependencies](direct-dependenc
 | [mdurl](https://github.com/executablebooks/mdurl)                     | [0.1.2](https://pypi.org/project/mdurl/0.1.2/)             | MIT License                        | Taneli Hukkinen <hukkin@users.noreply.github.com>                                     | Markdown URL utilities                                    |
 | [tomli](https://github.com/hukkin/tomli)                              | [2.0.1](https://pypi.org/project/tomli/2.0.1/)             | MIT License                        | Taneli Hukkinen <hukkin@users.noreply.github.com>                                     | A lil' TOML parser                                        |
 | [typing_extensions](https://github.com/python/typing_extensions)      | [4.7.1](https://pypi.org/project/typing_extensions/4.7.1/) | Python Software Foundation License | "Guido van Rossum, Jukka Lehtosalo, Łukasz Langa, Michael Lee" <levkivskyi@gmail.com> | Backported and Experimental Type Hints for Python 3.7+    |
-<!--[[[end]]] (checksum: 7c2ca17941bb80a0a7bee0c8b2c2645a)-->
+<!--[[[end]]] (checksum: 7ca6971e25765354952f0dec73193369)-->
 
 ## Dependency Tree(s)
 
