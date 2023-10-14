@@ -5,7 +5,9 @@ Meeting, rendezvous, confluence (Finnish kohtaaminen) mark up, down, and up agai
 Given a zip file containing a tree of html and media files following certain conventions, 
 the tool produces a markdown media tree below `kohtaaminen-md`.
 
-[License: MIT](https://git.sr.ht/~sthagen/kohtaaminen/tree/default/item/LICENSE)
+[License: MIT](https://git.sr.ht/~sthagen/kohtaaminen/tree/default/item/LICENSE) |
+[Country of origin: Switzerland](https://git.sr.ht/~sthagen/kohtaaminen/tree/default/item/COUNTRY-OF-ORIGIN) |
+[Export control classification number(ECCN): EAR99](https://git.sr.ht/~sthagen/kohtaaminen/tree/default/item/EXPORT-CONTROL-CLASSIFICATION-NUMBER)
 
 Third party dependencies are documented in the folder [third-party](third-party/README.md).
 
