@@ -16,7 +16,7 @@ digraph {
 	mdformat -> tomli [label=">=1.1.0"]
 	mdformat [label="mdformat\n0.7.16"]
 	mdurl [label="mdurl\n0.1.2"]
-	pypandoc [label="pypandoc\n1.11"]
+	pypandoc [label="pypandoc\n1.12"]
 	tomli [label="tomli\n2.0.1"]
 	typer -> "typing-extensions" [label=">=3.7.4.3"]
 	typer -> click [label=">=7.1.1,<9.0.0"]

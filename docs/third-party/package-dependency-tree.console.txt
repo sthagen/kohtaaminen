@@ -13,7 +13,7 @@ mdformat-gfm==0.3.5
 └── mdit-py-plugins [required: >=0.2.0,<0.4.0, installed: 0.3.5]
     └── markdown-it-py [required: >=1.0.0,<3.0.0, installed: 2.2.0]
         └── mdurl [required: ~=0.1, installed: 0.1.2]
-pypandoc==1.11
+pypandoc==1.12
 typer==0.9.0
 ├── click [required: >=7.1.1,<9.0.0, installed: 8.1.6]
 └── typing-extensions [required: >=3.7.4.3, installed: 4.7.1]
