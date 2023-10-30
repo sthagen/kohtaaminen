@@ -11,9 +11,9 @@ the tool produces a markdown media tree below `kohtaaminen-md`.
 [![Configuration](badges/configuration-sbom.svg)](third-party/index.html)
 
 [![Version](https://img.shields.io/pypi/v/kohtaaminen.svg?style=flat)](https://pypi.python.org/pypi/kohtaaminen/)
-[![Downloads](docs/badges/downloads-per-month.svg)](https://pepy.tech/project/kohtaaminen)
+[![Downloads](badges/downloads-per-month.svg)](https://pepy.tech/project/kohtaaminen)
 [![Supported Versions](https://img.shields.io/pypi/pyversions/kohtaaminen.svg?style=flat)](https://pypi.python.org/pypi/kohtaaminen/)
-[![Maintenance Status](docs/badges/commits-per-year.svg)](https://git.sr.ht/~sthagen/kohtaaminen/log)
+[![Maintenance Status](badges/commits-per-year.svg)](https://git.sr.ht/~sthagen/kohtaaminen/log)
 
 ## Bug Tracker
 
