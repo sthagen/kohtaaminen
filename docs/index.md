@@ -12,7 +12,7 @@ the tool produces a markdown media tree below `kohtaaminen-md`.
 
 [![Version](badges/latest-release.svg)](https://pypi.python.org/pypi/kohtaaminen/)
 [![Downloads](badges/downloads-per-month.svg)](https://pepy.tech/project/kohtaaminen)
-[![Supported Versions](https://img.shields.io/pypi/pyversions/kohtaaminen.svg?style=flat)](https://pypi.python.org/pypi/kohtaaminen/)
+[![Python](badges/python-versions.svg)](https://pypi.python.org/pypi/kohtaaminen/)
 [![Maintenance Status](badges/commits-per-year.svg)](https://git.sr.ht/~sthagen/kohtaaminen/log)
 
 ## Bug Tracker
