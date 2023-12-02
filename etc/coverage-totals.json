@@ -1,7 +1,7 @@
 {
   "kohtaaminen": {
-    "version": "7.3.2",
-    "timestamp": "2023-12-02T15:21:01.597426",
+    "coverage_tool_version": "7.3.2",
+    "timestamp": "2023-12-02 15:56:14 +00:00",
     "branch_coverage": true,
     "show_contexts": true,
     "covered_lines": 153,
@@ -13,6 +13,22 @@
     "num_branches": 103,
     "num_partial_branches": 10,
     "covered_branches": 79,
-    "missing_branches": 24
+    "missing_branches": 24,
+    "node_id": "c79891e5-aabf-3a83-95b9-588edcd8327f",
+    "nfiles": 3,
+    "files": [
+      "kohtaaminen/__init__.py",
+      "kohtaaminen/cli.py",
+      "kohtaaminen/kohtaaminen.py"
+    ],
+    "blake3": "4d577e9998ef768ed0368fe94d9f028e59eabf437f3a086ec17486e35b5dc4e5",
+    "blake2": "2cef40c90e5dbff1b4562dfed36c2d70f2861da4b53a421d5ad714c22ff61ca749d5742723e78ace159fffedba226508444c031c59fcdb141e63a12d8024dbc0",
+    "sha512": "6b7ea86f639e5785ec19c3d709c13040d26315f9f74f7146add4b0e2690ff25af693e68b7a49def9612874c34d03f93ed88df6486493aac6280b5f7ca51b9ce9",
+    "sha384": "835ccaeed070fe82a1864664f50686082b44f6dd65613f5cc4de98a3e0c8d26bdbb4a8e68ee0ca6899630f4e9f17cc7c",
+    "sha256": "4d0c289a5cd91d56d20e41579947f2119aad4b24735100daf1e88e6d116dc122",
+    "sha1": "d301fb1b1c6a130a6141d7d1a21a96962e1090a5",
+    "md5": "ad4299c073cb93e197f476e1d395359f",
+    "python_version": "3.10.12",
+    "entropy": 4.571676
   }
 }
