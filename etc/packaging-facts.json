@@ -20,6 +20,7 @@
       "last_month": -1,
       "last_week": -1
     },
+    "dynamic": null,
     "home_page": "https://git.sr.ht/~sthagen/kohtaaminen",
     "keywords": "developer-tools,documentation-tools,html,markdown",
     "license": "",
@@ -36,6 +37,7 @@
       "Source Code": "https://git.sr.ht/~sthagen/kohtaaminen",
       "Test Coverage": "https://codes.dilettant.life/coverage/kohtaaminen"
     },
+    "provides_extra": null,
     "release_url": "https://pypi.org/project/kohtaaminen/2022.8.2/",
     "requires_dist": [
       "mdformat-gfm (>=0.3.5)",
