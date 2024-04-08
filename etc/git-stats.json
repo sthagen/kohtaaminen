@@ -1,25 +1,37 @@
 {
   "total": {
-    "commits": 1949,
+    "commits": 1953,
     "first_committed_at": "2021-11-13T10:36:39+00:00",
-    "last_committed_at": "2024-04-06T21:25:52+00:00",
-    "month_span_day_count": 875,
-    "year_span": 2.3972602739726026,
-    "commits_per_year": 813,
-    "insertions_per_year": 10494.480000000001,
-    "deletions_per_year": 3310.8628571428576,
-    "lines_per_year": 13805.342857142858,
-    "files_per_year": 952.3371428571429,
-    "insertions_count": 25158,
-    "deletions_count": 7937,
-    "lines_count": 33095,
-    "files_count": 2283,
-    "insertions_avg": 12.90815802975885,
-    "deletions_avg": 4.072344792201129,
-    "lines_avg": 16.98050282195998,
-    "files_avg": 1.1713699332991279
+    "last_committed_at": "2024-04-08T20:24:55+00:00",
+    "month_span_day_count": 877,
+    "year_span": 2.4027397260273973,
+    "commits_per_year": 812,
+    "insertions_per_year": 10474.293044469783,
+    "deletions_per_year": 3307.0581527936147,
+    "lines_per_year": 13781.351197263399,
+    "files_per_year": 951.4139110604333,
+    "insertions_count": 25167,
+    "deletions_count": 7946,
+    "lines_count": 33113,
+    "files_count": 2286,
+    "insertions_avg": 12.886328725038403,
+    "deletions_avg": 4.068612391193036,
+    "lines_avg": 16.95494111623144,
+    "files_avg": 1.1705069124423964
   },
   "commit_stats": {
+    "2024-04-08T20:24:55+00:00": {
+      "insertions": 1,
+      "deletions": 1,
+      "lines": 2,
+      "files": 1
+    },
+    "2024-04-07T21:37:06+00:00": {
+      "insertions": 8,
+      "deletions": 8,
+      "lines": 16,
+      "files": 2
+    },
     "2024-04-06T21:25:52+00:00": {
       "insertions": 8,
       "deletions": 8,
@@ -16347,6 +16359,20 @@
       "deletions": 9,
       "lines": 18,
       "files": 3
+    },
+    "2024-04-07": {
+      "commits": 1,
+      "insertions": 8,
+      "deletions": 8,
+      "lines": 16,
+      "files": 2
+    },
+    "2024-04-08": {
+      "commits": 1,
+      "insertions": 1,
+      "deletions": 1,
+      "lines": 2,
+      "files": 1
     }
   }
 }
